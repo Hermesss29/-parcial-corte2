@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 15px;
   padding: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
@@ -26,12 +29,20 @@ label {
 input {
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   background-color: #f9f9f9;
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s ease;
+  color: #000; /* 👈 ESTA LÍNEA */
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f9f9f9 inset !important;
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 
 input:focus {
   border-color: #007bff;

@@ -49,3 +49,8 @@
   color: #fff; /* Texto blanco para contraste */
   border-color: #0056b3;
 }
+
+h3 {
+  font-size: 18px;
+  color: #333; /* Texto oscuro */
+}
